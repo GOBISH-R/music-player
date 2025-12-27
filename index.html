@@ -1,92 +1,53 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1" />
-		<title>Pulse — Music Player</title>
-		<link rel="stylesheet" href="styles.css" />
-	</head>
-	<body>
-		<div class="app">
-			<aside class="sidebar">
-				<div class="brand">
-					<div class="logo">
-						<svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.5">
-							<path d="M9 18V5l11-2v13" stroke-linecap="round" stroke-linejoin="round"></path>
-							<circle cx="6" cy="18" r="3" stroke-linecap="round" stroke-linejoin="round"></circle>
-						</svg>
-					</div>
-					<div class="brand-text">Pulse</div>
-				</div>
+<head>
+    <meta charset="UTF-8">
+    <title>Pulse Music Player</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
 
-				<nav class="nav">
-					<button class="nav-item active">
-						<svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3 9.5L12 3l9 6.5V20a1 1 0 0 1-1 1h-5v-7H9v7H4a1 1 0 0 1-1-1V9.5z"/></svg>
-						<span>Home</span>
-					</button>
-					<button class="nav-item">
-						<svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4.35-4.35"/></svg>
-						<span>Search</span>
-					</button>
-					<button class="nav-item">
-						<svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="4" width="18" height="16" rx="2"/><path d="M3 10h18"/></svg>
-						<span>Your Library</span>
-					</button>
-				</nav>
+<div class="app">
 
-				<div class="playlists">
-					<div class="playlists-title">Playlists</div>
-					<ul>
-						<li>Liked Songs</li>
-						<li>Chill Beats</li>
-						<li>Focus Mix</li>
-						<li>Workout Mix</li>
-					</ul>
-				</div>
-			</aside>
+    <div class="sidebar">
+        <div class="logo">🎵 Pulse</div>
 
-			<div class="main">
-				<header class="topbar">
-					<div class="top-left">
-						<div class="app-logo">
-							<svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 3v10.15A4 4 0 1 0 14 17V7" stroke-linecap="round" stroke-linejoin="round"/></svg>
-						</div>
-						<div class="player-name">Pulse Player</div>
-					</div>
+        <ul class="menu">
+            <li class="active">Home</li>
+            <li>Search</li>
+            <li>Your Library</li>
+        </ul>
 
-					<div class="top-center">
-						<div class="search">
-							<input type="search" placeholder="Search songs, artists, playlists" />
-						</div>
-					</div>
+        <div class="playlist-title">Playlists</div>
+        <ul class="playlist">
+            <li>Liked Songs</li>
+            <li>Chill Beats</li>
+            <li>Focus Mix</li>
+            <li>Workout Mix</li>
+        </ul>
+    </div>
 
-					<div class="top-right">
-						<button class="icon-btn" aria-label="Notifications">
-							<svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M15 17h5l-1.405-1.405A2.032 2.032 0 0 1 18 14.158V11a6 6 0 1 0-12 0v3.159c0 .538-.214 1.055-.595 1.436L4 17h5"/></svg>
-						</button>
-						<button class="profile-btn" aria-label="Account">
-							<img src="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='white' stroke-width='1.2'><path d='M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2'/><circle cx='12' cy='7' r='4'/></svg>" alt="profile" />
-						</button>
-					</div>
-				</header>
+    <div class="main">
+        <div class="top-bar">
+            <h2>Pulse Player</h2>
+            <input type="text" placeholder="Search songs, artists, playlists">
+        </div>
 
-				<main class="content">
-					<section class="section">
-						<h2 class="section-title">Your Playlists</h2>
-						<div class="playlists-grid">
-							<article class="card"> <div class="card-name">Chill Beats</div> </article>
-							<article class="card"> <div class="card-name">Focus Mix</div> </article>
-							<article class="card"> <div class="card-name">Workout Mix</div> </article>
-							<article class="card"> <div class="card-name">Liked Songs</div> </article>
-							<article class="card"> <div class="card-name">Evening Vibes</div> </article>
-							<article class="card"> <div class="card-name">Instrumentals</div> </article>
-							<article class="card"> <div class="card-name">Top Hits</div> </article>
-							<article class="card"> <div class="card-name">Deep Focus</div> </article>
-						</div>
-					</section>
-				</main>
-			</div>
-		</div>
-	</body>
+        <h3>Your Playlists</h3>
+
+        <div class="cards">
+            <div class="card blue">Chill Beats</div>
+            <div class="card green">Focus Mix</div>
+            <div class="card orange">Workout Mix</div>
+            <div class="card purple">Liked Songs</div>
+            <div class="card pink">Evening Vibes</div>
+            <div class="card sky">Instrumentals</div>
+            <div class="card teal">Top Hits</div>
+            <div class="card violet">Deep Focus</div>
+        </div>
+    </div>
+
+</div>
+
+</body>
 </html>
-
